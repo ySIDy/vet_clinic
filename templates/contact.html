@@ -3,28 +3,29 @@
 {% endblock %}
 {% block body %}
 <div class="main">
-    <form method="post" action="contact/">
+    <form method="post" action="/contact/">
         {% csrf_token %}
 
         <div class="contact_box">
 
 
             <div class="form-group">
-                <label for="name">ІМ'Я</label>
-                <input type="text" name="name" id="name">
+                
+                <input class="form_field" type="text" name="name" id="name" placeholder="Ваше Ім'я">
             </div>
 
             <div class="form-group">
-                <label for="phone">ТЕЛЕФОН</label>
-                <input type="text" name="phone" id="phone">
+                
+                <input class="form_field" type="text" name="phone" id="phone" placeholder="Номер телефону">
             </div>
 
             <div class="form-group">
-                <label for="email">ПОШТА</label>
-                <input type="text" name="email" id="email">
+                
+                <input class="form_field" type="text" name="email" id="email" placeholder="email">
             </div>
+            <button class="submit_buton" type="submit">Відправити</button>
         </div>  
-
+        
     </form>
 </div>
 
