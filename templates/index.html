@@ -1,11 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    111
-</body>
-</html>
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+{% block body %}
+<div class="main">
+    <div class="content">
+        <div class="main_image"></div>
+        <div class="main_text">
+            <div style="width: 30vh; height: 500px;">
+                <div class="inside_text" style="font-size: 18pt; color: #0693e3;">Ветеринарна клініка у Києві</div>
+                <div class="inside_text">Доброго дня, раді вас бачити на сайті нашої ветеринарної клініки чотири лапи</div>
+                <div class="inside_text">Ми — сучасна, затишна клініка, в якій вашому вихованцю нададуть ветеринарну допомогу, а також щорічні профілактичні ветеринарні послуги.</div>
+            </div>
+            <div style="width: 30vh; height: 500px;">
+                <img style="float:left; width: 400px;" src="../static/pngegg.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+
+
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9247281432436!2d30.4453157!3d50.44250269999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc21d2aac0c9%3A0x6e28c1228ff6a4d4!2z0JjQvdC00YPRgdGC0YDQuNCw0LvRjNC90YvQuSDQv9C10YAuLCAyMywg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1693937810486!5m2!1sru!2sua" width="1000px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+
+{% endblock %}

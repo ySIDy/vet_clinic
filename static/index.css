@@ -1,0 +1,23 @@
+.inside_text{
+    /* float: left; */
+    font-size: 25px;
+
+    margin: 0px;
+    height: 25px;
+    width: 30vh;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+.main_text{
+    width:100%;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
+    columns: 2 auto;
+    
+}
+
+.widget{
+    margin-right: 30px;
+}

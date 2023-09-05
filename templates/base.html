@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <div class="head">
+        <div class="head_info">
+            
+            <a href="/"><img class="logo" src="../static/logo.png" alt="" width="100px" height="100px" style="float: left;"></a>
+            <a href="/"><div class="header_element_main">ЧОТИРИ ЛАПИ</div></a>
+            <a href="/"><div class="header_element">ЗАПИСАТИСЯ</div></a>
+            <a href="/about"><div class="header_element">ПРО НАС</div></a>
+            <a href="/contact"><div class="header_element">КОНТАКТИ</div></a>
+            <div style="float: right; margin-right: 50px;" class="header_element">+38012345678</div>
+        </div>
+    </div>
+    </header>
+    
+    {% block body %}
+    
+    {% endblock %}
+    
+    <footer>
+        <aside id="text-2" class="widget widget_text">			<div class="textwidget"><p style="text-align: right;"><span style="font-size: 18pt; color: #0297d9;"><i class="icon-call"></i> +380123546789</span></p> <p style="text-align: right;"><i class="icon-location"></i> м. Київ, пров. Індустріальний, 23</p></div></aside>
+    </footer>
+</div>
+</body>
+</html>
